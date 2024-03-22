@@ -1,0 +1,184 @@
+:root {
+    --brand-color: #2E2F42;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+/*nav section*/
+.logo::after {
+    content: "STUDIO";
+    color: var(--brand-color);
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    letter-spacing: 0.02em;
+}
+.logo {
+    color: #4D5AE5;
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.main-nav {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #2E2F42;
+    cursor: pointer;
+    min-width: 500px;
+    gap: 30px;
+    display: flex;
+}
+
+a:hover {
+    color: #404BBF;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    margin-block-start: 0;
+    min-height: 72px;
+    align-items: center;
+    border-bottom: 1px solid #e7e9fc;
+        width: 1440px;
+        height: 72px;
+}
+
+address a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    color: #434455;
+}
+
+.address-nav {
+    display: flex;
+    gap: 30px;
+}
+
+
+.first-button {
+    background-color: #404BBF;
+    color: #FFFFFF
+}
+ul button{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #4D5AE5;
+    border: 1px solid #E7E9FC;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+button:hover{
+    cursor: pointer;
+}
+.button {
+    background: #f4f4fd;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 96px 271px 72px;
+}
+
+/*grid cards section*/
+
+.card h3{
+    font-size: 20px;
+    color: var(--brand-color);
+    text-align: left;
+}
+.card p{
+    font-size: 16px;
+    text-align: left;
+    color: #434455;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 0;
+    /* grid-template-columns: repeat(auto-fit(minmax(200px, 300px)); */
+}
+.card {
+    border: 1px solid #e7e9fc;
+    width: 360px;
+    height: 420px;
+    /* flex-basis: calc((100%-72px)/3)); */
+}
+
+/*Footer section*/
+
+.logo-bottom {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+
+.logo-bottom::after {
+    content: "STUDIO";
+    color: #F4F4FD;
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    letter-spacing: 0.02em;
+}
+.footer-section p {
+    color: #F4F4FD;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.footer-section {
+    background-color: var(--brand-color);
+    margin: 100px 156px 100px 156px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 264px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
