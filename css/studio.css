@@ -44,6 +44,14 @@ a {
     letter-spacing: 0.03em;
     text-align: left;
     margin-top: 2px;
+    position: absolute;
+    top: 24px;
+    left: 16px;
+}
+.hamburger-icon {
+    position: absolute;
+    top: 24px;
+    right: 16px;
 }
    .nav-bar {
        display: flex;
@@ -54,7 +62,7 @@ a {
        border-bottom: 1px solid #e7e9fc;
        height: 72px;
    }
-.main-nav {
+.main-nav a{
     display: none;
 }
 .address {
@@ -617,16 +625,6 @@ button:focus {
 }
 
 @media screen and (min-width: 768px) {
-    .main-nav {
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 24px;
-            letter-spacing: 0.02em;
-            text-align: left;
-            color: #2E2F42;
-            cursor: pointer;
-            min-width: 500px;
-        }
     .current-page {
             border-bottom: 4px solid var(--primary-brand);
             width: 100%;
@@ -636,7 +634,17 @@ button:focus {
     
     .main-nav a {
             margin-right: 20px;
+            font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                color: #2E2F42;
+                cursor: pointer;
+                min-width: 500px;
+                display: grid;
         }
+    
     
     a:hover {
             color: var(--hover-color);
@@ -651,11 +659,6 @@ button:focus {
             letter-spacing: 0.02em;
             cursor: pointer;
             color: #434455;
-           
-        }
-    
-    .mail {
-            margin-right: 30px;
         }
     .address {
         display: flex;
@@ -669,6 +672,9 @@ button:focus {
         align-items: center;
         border-bottom: 1px solid #e7e9fc;
         height: 72px;
+}
+.hamburger-icon{
+    display: none;
 }
   }
 
