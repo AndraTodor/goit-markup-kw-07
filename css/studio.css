@@ -606,6 +606,14 @@ h2 {
     fill: #fff;
 }
 
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1158px) {
+    
+}
+
 /* Portofolio */
 
 /*Filter Portofolio Section*/
@@ -642,7 +650,7 @@ button:focus {
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
-    margin: 96px 271px 72px;
+    margin: 96px 72px;
 }
 
 /*Grid cards section*/
