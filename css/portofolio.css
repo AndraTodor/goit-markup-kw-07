@@ -70,17 +70,13 @@ address a {
     cursor: pointer;
     color: #434455;
 }
-
-.address-nav {
+address {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
 }
 
+ /* Filter Portofolio Section */
 
-.first-button {
-    background-color: #404BBF;
-    color: #FFFFFF
-}
 ul button{
     font-size: 16px;
     font-weight: 500;
@@ -106,7 +102,6 @@ button:hover{
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
-    margin: 96px 271px 72px;
 }
 
 /*grid cards section*/
