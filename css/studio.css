@@ -122,10 +122,14 @@ img {
 
 /* Hero section */
 .hero-section {
+    width: 100%;
     padding: 188px 0;
     height: 600px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office.png") no-repeat center;
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office.png");
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
     display: flex;
 }
 
@@ -366,6 +370,7 @@ li>p{
     letter-spacing: 0.02em;
     text-align: center;
     margin-bottom: 72px;
+    align-items: center;
 }
 
 /* Our team section */
@@ -445,7 +450,9 @@ li>p{
 
 /* Customers section */
 .customers {
-    padding: 120px;
+    /* padding: 80px; */
+    display: flex;
+    flex-direction: column;
 }
 
 .customers-icon {
@@ -454,6 +461,7 @@ li>p{
     flex-wrap: wrap;
     gap: 24px;
     padding-inline-start: 0;
+    flex: 1 0 calc(100% / 2);
 }
 
 .customers-icon svg {
@@ -499,6 +507,9 @@ li>p{
     color: var(--primary-brand);
 }
 
+.social-footer{
+    width: 264px;
+}
 .icon-footer {
     width: 40px;
     height: 40px;
@@ -507,7 +518,6 @@ li>p{
     justify-content: center;
     align-items: center;
     transition: background-color, color var(--transition);
-    /* color: #858588; */
     fill: #fff;
     background: var(--primary-brand);
 }
@@ -528,20 +538,28 @@ li>p{
     background-color: var(--brand-color);
     color: #F4F4FD;
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.02em;
     padding: 100px 0;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
+    gap: 72px;
 }
 
 .footer-paragraph {
     width: 264px;
     margin-top: 16px;
+}
+.subscribe {
+    width: 528px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .subscribe-input {
@@ -569,6 +587,12 @@ li>p{
     text-align: center;
 }
 
+.footer-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .subscribe-btn {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: var(--primary-brand);
@@ -582,11 +606,10 @@ li>p{
     letter-spacing: 0.04em;
     text-align: center;
     color: #fff;
-    display: inline-flex;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
     align-items: center;
     vertical-align: top;
-    margin-left: 24px;
     margin-top: 16px;
     outline: none;
 }
@@ -656,19 +679,16 @@ li>p{
         display: none;
     }
 
-li>h3 {
-    text-align: left;
-}
+    li>h3 {
+        text-align: left;
+    }
 
-li>p {
-    text-align: left;
-}
-.footer-flex{
-    flex-direction: row;
-}
-.subscribe {
-    width: 494px;
-}
+    li>p {
+        text-align: left;
+    }
+    .subscribe {
+        flex-wrap: nowrap;
+    }
 }
 
 /* Desktop style */
@@ -749,6 +769,7 @@ li>p {
     justify-content: space-between;
     padding-inline: 1rem;
 }
+
 }
 
 /* Portofolio */
@@ -787,7 +808,7 @@ button:focus {
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
-    margin: 96px 271px 72px;
+    padding: 48px 0;
 }
 
 /*Grid cards section*/
@@ -805,7 +826,7 @@ button:focus {
 
 .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 24px;
     padding: 0;
