@@ -235,7 +235,10 @@
         <h2 class="sections-title">Our Team</h2>
         <div class="cards-team">
           <div class="card-team">
-            <img src="./images/imgA.png" alt="Product Designer-Mark Guerero" />
+            <picture>
+              <source>
+            </picture>
+            <img srcset="./images/imgA.png 1x, ./images/imgA2x.png 2x" src="./images/imgA.png" alt="Product Designer-Mark Guerero" />
             <h3>Mark Guerero</h3>
             <p>Product Designer</p>
             <div class="icons-list">
@@ -287,7 +290,7 @@
             </div>
           </div>
           <div class="card-team">
-            <img src="./images/imgB.png" alt="Frontend Developer-Tom Ford" />
+            <img srcset="./images/imgB.png 264w, ./images/imgB2x.png 528w" src="./images/imgB.png" sizes="264px" alt="Frontend Developer-Tom Ford" />
             <h3>Tom Ford</h3>
             <p>Frontend Developer</p>
             <div class="icons-list">
@@ -317,7 +320,7 @@
               <a
                 href="https://https://facebook.com//"
                 class="icon"
-                rel="noopener noreferrer nofollow"w
+                rel="noopener noreferrer nofollow"
                 target="_blank"
                 aria-label="facebook-link"
               >
@@ -339,7 +342,12 @@
             </div>
           </div>
           <div class="card-team">
-            <img src="./images/imgC.png" alt="Marketing-Camila Garcia" />
+            <picture>
+              <source srcset="./images/imgC2x.webp" media="(min-width: 1158px)">
+              <source srcset="./images/imgC1x.webp" media="(min-width: 768px)"> 
+              <img src="./images/imgC.png" alt="Marketing-Camila Garcia" />
+            </picture>
+            
             <h3>Camila Garcia</h3>
             <p>Marketing</p>
             <div class="icons-list">
